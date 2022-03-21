@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+*{padding: 0; margin: 0;}
+
+body{margin: 0 auto; width: 1000px; box-sizing: border-box;}
+
+
+/* 행 레이아웃 */
+.header{
+    float: left;
+    width: 250px;
+    height: 650px;
+}
+
+.main{
+    float: left;
+    width: 750px;
+    height: 350px;
+    background-color: blueviolet;
+}
+
+.contents{
+    float: left;
+    width: 750px;
+    height: 200px;
+}
+
+.footer{
+    float: left;
+    width: 750px;
+    height: 100px;
+}
+
+/* 열 레이아웃 */
+h1{
+    width: 100%;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.notice, .gallery, .link{
+    float: left;
+    width: 250px;
+    height: 100%;
+}
+
+.notice{
+    background-color: blanchedalmond;
+}
+
+.gallery{
+    background-color: coral;
+}
+
+.link{
+    background-color: darkblue;
+}
+
+.footer>h1{
+    width: 25%;
+    float: left;
+}
+
+.copy, .family{
+    float: left;
+}
+
+.copy{
+    width: 50%;
+    height: 100%;
+    background-color: cornflowerblue;
+}
+
+.family{
+    width: 25%;
+    height: 100%;
+    background-color: darkcyan;
+}

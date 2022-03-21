@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* 브라우저 초기화작업 */
+*{padding: 0; margin: 0;}
+li{list-style: none;}
+img{border: none;}
+
+.main{
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.main ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3600px;
+    height: 300px;
+}
+
+.main li{
+    float: left;
+    width: 1200px;
+    height: 300px;
+}
+
+img{
+    width: 1200px;
+}
