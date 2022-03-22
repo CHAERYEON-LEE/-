@@ -1,0 +1,50 @@
+/* base */
+*{ 
+    padding: 0; margin: 0; /* 여백 없앰 */
+    font-family: "맑은 고딕",sans-serif;
+} 
+li{ list-style: none; } /* 리스트 기호 없앰 */
+a{ text-decoration: none; }
+img{ border: none; } /* 이미지 링크시 생기는 선 없앰 */
+
+
+/* board */
+.board{ 
+    width: 400px; height: 200px; /* 와이어 프레임영역 */
+    padding: 0 20px; /* 좌우 안쪽 여백 */
+    box-sizing: border-box; /* width영역안으로 패딩 수치 인사이드 처리 */
+    margin: 20px; /* 원래 작성하지 않아도 됨 - 너무 붙어 보일까봐 작성  */
+}
+.btn{ 
+    width: 100%; height: 50px; /* 버튼 영역 */
+    border-bottom: 1px solid #999999; 
+}
+.btn li{ 
+    float: left; /* 버튼들의 수평 나열 처리 */
+    margin: 0 10px; 
+    height: 100%; line-height: 49px; 
+}
+.btn .first{ /* 첫번째 버튼 */
+    margin-left: 0; /* 왼쪽 여백 없앰 */
+}
+.btn a{ /* 클릭할 영역 */
+    display: block; 
+    width: 100%; height: 100%; 
+    box-sizing: border-box; 
+    font-size: 18px; font-weight: bold; color: #999999; 
+}
+.btn a.active{ /* 활성화시 변경 */
+    color: #222328; border-bottom: 3px solid #222328;
+}
+.bwrap{ 
+    width: 100%; height: 150px; /* 보여질 영역  */
+}
+.notice{ /* 공지사항 */
+    width: 100%; height: 150px; 
+    background-color: pink; /* 배경색은 영역 확인 */
+}
+.gallery{ /* 갤러리 */
+    display: none; /* 갤러리 부분 안보이게 처리 */
+    width: 100%; height: 150px; 
+    background-color: lightblue; /* 배경색은 영역 확인 */
+}
