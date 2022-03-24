@@ -1,0 +1,284 @@
+@charset "UTF-8";
+
+*{padding: 0;  margin: 0; font-family: "맑은 고딕", sans-serif; font-size: 14px; color: #333;}
+a{ text-decoration: none;}
+li{ list-style: none;}
+img{ border: none;}
+div, ul, li{box-sizing: border-box;}
+
+.wrap{
+    width: 1000px;
+    height: 650px;
+    margin: 0 auto;
+}
+
+/* 헤더 */
+.header{
+    float: left;
+    width: 200px;
+    height: 650px;
+}
+
+.header h1{
+    width: 200px;
+    height: 40px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.gnb{
+    width: 200px;
+    text-align: center;
+    margin-top: 30px;
+    border-top: 3px solid #1e3272;
+}
+
+.gnb > ul > li{
+    width: 200px;
+    line-height: 50px;
+    border: 1px solid #1e3272;
+}
+
+.mainnav{
+    display: block;
+    width: 200px;
+    height: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1e3272;
+}
+
+.gnb ul li:hover .mainnav{
+    color: #fff;
+    background-color: #1e3272;
+}
+
+.subnav{
+    display: none;
+    width: 200px;
+}
+
+.subnav li{
+    width: 200px;
+    height: 40px;
+    border: 1px solid #1e3272;
+}
+
+.subnav li a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+}
+
+.subnav li:hover a{
+    color: #fff;
+    background-color: #1e3272;
+}
+
+/* 메인 */
+.main{
+    float: left;
+    width: 800px;
+    height: 350px;
+}
+
+.main ul{
+    position: relative;
+    width: 800px;
+    height: 350px;
+}
+
+.main ul li{
+    display: none;
+    width: 800px;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 컨텐츠 */
+.content{
+    float: left;
+    width: 800px;
+    height: 200px;
+}
+
+.notice{
+    float: left;
+    width: 250px;
+    height: 200px;
+}
+
+.notice h2{
+    width: 240px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid #cbc168;
+    padding: 10px 10px;
+    margin-left: 5px;
+    box-sizing: border-box;
+}
+
+.notice ul{
+    padding-top: 5px;
+}
+
+.notice li{
+    width: 250px;
+    height: 30px;
+    padding-left: 5px;
+}
+
+.notice li a{
+    width: 250px;
+    font-size: 12px;
+}
+
+.notice ul li a span{
+    float: right;
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+.gallery{
+    float: left;
+    width: 300px;
+    height: 200px;
+}
+
+.gallery h2{
+    width: 250px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid #cbc168;
+    padding: 10px 10px 10px 5px;
+    margin-left: 30px;
+    box-sizing: border-box;
+}
+
+.gallery ul{
+    padding-left: 30px;
+}
+
+.gallery ul li{
+    float: left;
+    padding: 10px 3px;
+}
+
+.gallery ul li:hover img{
+    opacity: 1;
+}
+
+.gallery ul li a img{
+    width: 90%;
+    opacity: 0.7;
+}
+
+.now{
+    float: left;
+    width: 250px;
+    height: 200px;
+    padding-top: 5px;
+}
+
+.now a{
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.now a img{
+    width: 95%;
+}
+
+/* 푸터 */
+.footer{
+    float: left;
+    width: 800px;
+    height: 100px;
+    background-color: #666;
+}
+
+.copy{
+    float: left;
+    width: 450px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 12px;
+    color: #fff;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.footer_nav{
+    float: left;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.footer_nav ul li{
+    float: left;
+    padding-left: 30px;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.footer_nav ul li a{
+    color: #fff;
+    font-size: 12px;
+}
+
+.family{
+    float: left;
+    width: 350px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.family select{
+    float: left;
+    margin-left: 150px;
+    box-sizing: border-box;
+}
+
+.family option{
+    text-align: center;
+}
+/* 팝업 */
+.popup{
+    display: none;
+    width: 300px;
+    height: 250px;
+    z-index: 999;
+    background-color: #cbc168;
+    position: fixed;
+    top: 200px;
+    left: 40%;
+}
+
+.popup h2{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.popup p{
+    font-size: 13px;
+    text-align: center;
+    padding: 10px 10px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.popup a{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin-left: 130px;
+}

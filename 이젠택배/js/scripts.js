@@ -31,7 +31,7 @@ $(document).ready(function(){
     })
 })
 
-//gnb
+//메뉴
 $(document).ready(function(){
     $('.gnb').hover(function(){
         $('.subnav, .subbg').stop().slideDown('fast');
