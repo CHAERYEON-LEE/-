@@ -29,3 +29,12 @@ $(document).ready(function(){
         $('.tab_content > div').eq(i).fadeIn('fast');
     });
 });
+
+//메뉴
+$(document).ready(function(){
+    $('.gnb > ul > li').hover(function(){
+        $('.subnav, .gnbbg').stop().slideDown('slow');
+    }, function(){
+        $('.subnav, .gnbbg').stop().slideUp('slow');
+    });
+});
